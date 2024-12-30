@@ -1,0 +1,8 @@
+{
+  "label": "String Handling",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore string manipulation functions like LENGTH, SUBSTRING, UCASE, and LCASE."
+  }
+}

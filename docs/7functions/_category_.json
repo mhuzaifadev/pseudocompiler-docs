@@ -1,0 +1,8 @@
+{
+  "label": "Functions and Procedures",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Discover how to define and call functions and procedures in pseudo-code and their Python equivalents."
+  }
+}

@@ -1,0 +1,215 @@
+# Modulus and Integer Division 🎭
+
+Ah, modulus and integer division – the yin and yang of splitting numbers. They work together like a dream team. One handles the leftovers (modulus), and the other handles the neat-and-clean quotient (integer division). Today, we’ll learn how to use `MOD` and `DIV` in pseudo-code and Python, with plenty of laughs and examples to make it unforgettable. Let’s get cracking! 🥚
+
+---
+
+## **What is Modulus (MOD)? 🧮**
+The modulus operation finds the remainder when one number is divided by another. Think of it like slicing pizza – the modulus tells you how many slices are left over after everyone gets an equal share.
+
+### **Example 1: Sharing Pizza Slices 🍕**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Slices, People, LeftoverSlices : INTEGER
+Slices ← 11
+People ← 3
+LeftoverSlices ← Slices MOD People
+OUTPUT "Leftover pizza slices: ", LeftoverSlices
+```
+
+**Python:**
+```python
+Slices = 11
+People = 3
+LeftoverSlices = Slices % People
+print("Leftover pizza slices:", LeftoverSlices)
+```
+
+**Output:**
+```
+Leftover pizza slices: 2
+```
+*"Why is there always just enough for an argument?!"* 😅
+
+---
+
+### **Example 2: Checking Even or Odd Numbers 🔢**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Number : INTEGER
+Number ← 7
+IF Number MOD 2 = 0 THEN
+    OUTPUT "The number is even."
+ELSE
+    OUTPUT "The number is odd."
+ENDIF
+```
+
+**Python:**
+```python
+Number = 7
+if Number % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+```
+
+**Output:**
+```
+The number is odd.
+```
+*"Odd numbers are just a little quirky, like us!"* 🤪
+
+---
+
+## **What is Integer Division (DIV)? 🍰**
+Integer division divides one number by another and discards the remainder. Think of it as slicing a cake perfectly – no crumbs allowed.
+
+### **Example 3: Splitting Cupcakes Among Friends 🧁**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Cupcakes, Friends, CupcakesEach : INTEGER
+Cupcakes ← 20
+Friends ← 3
+CupcakesEach ← Cupcakes DIV Friends
+OUTPUT "Each friend gets ", CupcakesEach, " cupcakes."
+```
+
+**Python:**
+```python
+Cupcakes = 20
+Friends = 3
+CupcakesEach = Cupcakes // Friends
+print("Each friend gets", CupcakesEach, "cupcakes.")
+```
+
+**Output:**
+```
+Each friend gets 6 cupcakes.
+```
+*"The crumbs? That’s the baker’s tax!"* 🍰
+
+---
+
+## **Combining MOD and DIV: Leftovers Meet Sharing 🎉**
+
+### **Example 4: Sharing Treasure Among Pirates 🏴‍☠️**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Coins, Pirates, CoinsEach, LeftoverCoins : INTEGER
+Coins ← 100
+Pirates ← 7
+CoinsEach ← Coins DIV Pirates
+LeftoverCoins ← Coins MOD Pirates
+OUTPUT "Each pirate gets ", CoinsEach, " coins, with ", LeftoverCoins, " left over."
+```
+
+**Python:**
+```python
+Coins = 100
+Pirates = 7
+CoinsEach = Coins // Pirates
+LeftoverCoins = Coins % Pirates
+print(f"Each pirate gets {CoinsEach} coins, with {LeftoverCoins} left over.")
+```
+
+**Output:**
+```
+Each pirate gets 14 coins, with 2 left over.
+```
+*"Even pirates have maths problems!"* 🏴‍☠️
+
+---
+
+### **Example 5: Chocolate Division 🍫**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Chocolates, Kids, ChocolatesEach, LeftoverChocolates : INTEGER
+Chocolates ← 25
+Kids ← 4
+ChocolatesEach ← Chocolates DIV Kids
+LeftoverChocolates ← Chocolates MOD Kids
+OUTPUT "Each kid gets ", ChocolatesEach, " chocolates, with ", LeftoverChocolates, " left over."
+```
+
+**Python:**
+```python
+Chocolates = 25
+Kids = 4
+ChocolatesEach = Chocolates // Kids
+LeftoverChocolates = Chocolates % Kids
+print(f"Each kid gets {ChocolatesEach} chocolates, with {LeftoverChocolates} left over.")
+```
+
+**Output:**
+```
+Each kid gets 6 chocolates, with 1 left over.
+```
+*"Chocolate maths: the tastiest maths!"* 🍫
+
+---
+
+### **Example 6: Days and Weeks Conversion 📅**
+
+**Pseudo Code:**
+```plaintext
+DECLARE Days, Weeks, RemainingDays : INTEGER
+Days ← 45
+Weeks ← Days DIV 7
+RemainingDays ← Days MOD 7
+OUTPUT "That’s ", Weeks, " weeks and ", RemainingDays, " days."
+```
+
+**Python:**
+```python
+Days = 45
+Weeks = Days // 7
+RemainingDays = Days % 7
+print(f"That’s {Weeks} weeks and {RemainingDays} days.")
+```
+
+**Output:**
+```
+That’s 6 weeks and 3 days.
+```
+*"Time flies when you’re solving modulus problems!"* ⏳
+
+---
+
+## **Testing Your Knowledge with MOD and DIV 🧠**
+
+**Example 7: Classroom Groups 👩‍🏫**
+```plaintext
+DECLARE Students, GroupSize, FullGroups, LeftoverStudents : INTEGER
+Students ← 32
+GroupSize ← 5
+FullGroups ← Students DIV GroupSize
+LeftoverStudents ← Students MOD GroupSize
+OUTPUT "You can form ", FullGroups, " full groups, with ", LeftoverStudents, " students left over."
+```
+
+**Python:**
+```python
+Students = 32
+GroupSize = 5
+FullGroups = Students // GroupSize
+LeftoverStudents = Students % GroupSize
+print(f"You can form {FullGroups} full groups, with {LeftoverStudents} students left over.")
+```
+
+**Output:**
+```
+You can form 6 full groups, with 2 students left over.
+```
+*"Teachers always have to deal with the leftovers!"* 🍎
+
+---
+
+## **The Moral of `MOD` and `DIV` 📜**
+
+Modulus and integer division are the ultimate tag team for solving real-world problems. Whether it’s sharing chocolate or dividing treasure, they ensure fairness and precision (with a dash of humour). Keep practising, and you’ll be the MOD/DIV master in no time! 🎓✨

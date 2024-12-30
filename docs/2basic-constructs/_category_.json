@@ -1,0 +1,8 @@
+{
+  "label": "Basic Constructs",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to declare variables and constants in pseudo-code and their conversion to Python."
+  }
+}

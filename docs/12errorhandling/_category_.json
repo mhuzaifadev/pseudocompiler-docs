@@ -1,0 +1,8 @@
+{
+  "label": "Error Handling and Edge Cases",
+  "position": 12,
+  "link": {
+    "type": "generated-index",
+    "description": "Understand how to handle invalid inputs and common conversion issues."
+  }
+}

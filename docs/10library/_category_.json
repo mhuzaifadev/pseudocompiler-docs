@@ -1,0 +1,8 @@
+{
+  "label": "Library Routines",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore pseudo-code library routines like MOD, DIV, ROUND, and RANDOM and their Python equivalents."
+  }
+}

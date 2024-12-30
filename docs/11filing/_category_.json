@@ -1,0 +1,8 @@
+{
+  "label": "File Handling",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to read from and write to files in pseudo-code and Python."
+  }
+}

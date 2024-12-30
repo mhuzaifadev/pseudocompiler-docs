@@ -1,0 +1,116 @@
+# One-Dimensional Arrays 
+
+Arrays are like neat rows of parked cars, each with its own spot. A one-dimensional array is just a single row, perfect for keeping things in order! Let’s see how to use them in both pseudo-code and Python.
+
+---
+
+## **Declaration and Initialization**
+
+### **Pseudo-Code:**
+```plaintext
+DECLARE MyArray : ARRAY[1:5] OF INTEGER
+MyArray[1] ← 10
+MyArray[2] ← 20
+MyArray[3] ← 30
+MyArray[4] ← 40
+MyArray[5] ← 50
+```
+
+### **Python:**
+```python
+MyArray = [10, 20, 30, 40, 50]
+```
+
+No need to declare the size beforehand in Python—just create and fill it! 
+
+---
+
+## **Index-Based Access and Assignment**
+
+### **Accessing Elements**
+
+**Pseudo-Code:**
+```plaintext
+OUTPUT MyArray[3]
+```
+
+**Python:**
+```python
+print(MyArray[2])  # Python uses 0-based indexing
+```
+
+**Output:**
+```
+30
+```
+*"Third car in the row? It’s the shiny red one!"* 🚗✨
+
+---
+
+### **Changing an Element**
+
+**Pseudo-Code:**
+```plaintext
+MyArray[2] ← 25
+```
+
+**Python:**
+```python
+MyArray[1] = 25
+```
+
+Now the second element is updated. 🚀
+
+---
+
+## **Example: Storing Student Marks 🎓**
+
+**Pseudo-Code:**
+```plaintext
+DECLARE Marks : ARRAY[1:3] OF INTEGER
+Marks[1] ← 85
+Marks[2] ← 90
+Marks[3] ← 95
+OUTPUT "First student scored: " + Marks[1]
+```
+
+**Python:**
+```python
+Marks = [85, 90, 95]
+print("First student scored:", Marks[0])
+```
+
+**Output:**
+```
+First student scored: 85
+```
+*"You’ve got a bright class there!"* 🌟
+
+---
+
+## **Traversing the Array**
+
+### **Pseudo-Code:**
+```plaintext
+FOR Index ← 1 TO 5
+    OUTPUT MyArray[Index]
+NEXT Index
+```
+
+### **Python:**
+```python
+for Index in range(5):
+    print(MyArray[Index])
+```
+
+**Output:**
+```
+10
+20
+30
+40
+50
+```
+*"A walk down the row of cars, admiring each one."* 🚶‍♂️
+
+---

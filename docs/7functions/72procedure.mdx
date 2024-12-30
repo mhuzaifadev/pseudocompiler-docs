@@ -1,0 +1,254 @@
+# Procedures
+
+Procedures are like functions’ chill cousins—they don’t stress about returning anything. They just get the job done, no strings (or return values) attached. Think of them as your helpful neighbour who waters your plants while you’re away. They don’t ask for anything in return; they’re just there to help. 🌱
+
+So, buckle up as we dive into the world of **procedures** and see how they make coding both efficient and enjoyable (with a sprinkle of British humour, of course). 🥸
+
+---
+
+## **What’s a Procedure?**
+
+A procedure is a reusable block of code that performs a specific task. Unlike a function, a procedure doesn’t return a value. It’s like a chef who prepares the meal but doesn’t hand you the bill—they’re just doing it for the joy of it (or because you’ve already paid). 😏
+
+---
+
+## **How to Declare a Procedure**
+
+### **Pseudo-Code Syntax**
+```plaintext
+PROCEDURE ProcedureName(Parameter1 : DataType, Parameter2 : DataType)
+    // Do something useful
+ENDPROCEDURE
+```
+
+### **Python Syntax**
+```python
+def procedure_name(parameter1, parameter2):
+    # Do something useful
+```
+
+---
+
+## **Examples: Putting Procedures to Work**
+
+Let’s see how to convert pseudo-code procedures into Python, with some fun examples to keep it lively! 🎉
+
+---
+
+### **Example 1: Printing Stars ⭐**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE PrintStars(Number : INTEGER)
+    FOR Counter ← 1 TO Number
+        OUTPUT "*"
+    NEXT Counter
+ENDPROCEDURE
+
+CALL PrintStars(5)
+```
+
+**Python:**
+```python
+def PrintStars(Number):
+    for Counter in range(1, Number + 1):
+        print("*")
+
+PrintStars(5)
+```
+
+**Output:**
+```
+*
+*
+*
+*
+*
+```
+*"Because the universe deserves more stars, just like you."* ✨
+
+---
+
+### **Example 2: Announcing the Weather 🌦️**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE AnnounceWeather(Weather : STRING)
+    OUTPUT "Today’s weather is " + Weather
+ENDPROCEDURE
+
+CALL AnnounceWeather("sunny")
+```
+
+**Python:**
+```python
+def AnnounceWeather(Weather):
+    print("Today’s weather is " + Weather)
+
+AnnounceWeather("sunny")
+```
+
+**Output:**
+```
+Today’s weather is sunny
+```
+*"Unless it’s British weather—then it’s all four seasons in one day."* 🌦️☀️❄️
+
+---
+
+### **Example 3: Greet Your Friends 👋**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE Greet(Name : STRING)
+    OUTPUT "Hello, " + Name + "!"
+ENDPROCEDURE
+
+CALL Greet("Alice")
+CALL Greet("Bob")
+```
+
+**Python:**
+```python
+def Greet(Name):
+    print("Hello, " + Name + "!")
+
+Greet("Alice")
+Greet("Bob")
+```
+
+**Output:**
+```
+Hello, Alice!
+Hello, Bob!
+```
+*"Friendship level: unlocked."* 🤝
+
+---
+
+### **Example 4: Telling Time ⏰**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE TellTime(Hours : INTEGER, Minutes : INTEGER)
+    OUTPUT "The time is " + Hours + ":" + Minutes
+ENDPROCEDURE
+
+CALL TellTime(10, 30)
+```
+
+**Python:**
+```python
+def TellTime(Hours, Minutes):
+    print("The time is " + str(Hours) + ":" + str(Minutes))
+
+TellTime(10, 30)
+```
+
+**Output:**
+```
+The time is 10:30
+```
+*"Late for tea? Never. Just fashionably British."* 🫖
+
+---
+
+### **Example 5: Shouting a Message 📣**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE ShoutMessage(Message : STRING)
+    OUTPUT UCASE(Message)
+ENDPROCEDURE
+
+CALL ShoutMessage("hello world")
+```
+
+**Python:**
+```python
+def ShoutMessage(Message):
+    print(Message.upper())
+
+ShoutMessage("hello world")
+```
+
+**Output:**
+```
+HELLO WORLD
+```
+*"When in doubt, shout it out!"* 📢
+
+---
+
+### **Example 6: Calculating Table Multiples 🧮**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE MultiplicationTable(Number : INTEGER)
+    FOR Counter ← 1 TO 10
+        OUTPUT Number + " x " + Counter + " = " + (Number * Counter)
+    NEXT Counter
+ENDPROCEDURE
+
+CALL MultiplicationTable(3)
+```
+
+**Python:**
+```python
+def MultiplicationTable(Number):
+    for Counter in range(1, 11):
+        print(f"{Number} x {Counter} = {Number * Counter}")
+
+MultiplicationTable(3)
+```
+
+**Output:**
+```
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+...
+3 x 10 = 30
+```
+*"Maths doesn’t have to be scary—it’s just a repetitive friend."* 😅
+
+---
+
+### **Example 7: Making Tea ☕**
+
+**Pseudo-Code:**
+```plaintext
+PROCEDURE MakeTea(SugarCubes : INTEGER)
+    OUTPUT "Boiling water..."
+    OUTPUT "Adding " + SugarCubes + " sugar cubes."
+    OUTPUT "Your tea is ready!"
+ENDPROCEDURE
+
+CALL MakeTea(2)
+```
+
+**Python:**
+```python
+def MakeTea(SugarCubes):
+    print("Boiling water...")
+    print(f"Adding {SugarCubes} sugar cubes.")
+    print("Your tea is ready!")
+
+MakeTea(2)
+```
+
+**Output:**
+```
+Boiling water...
+Adding 2 sugar cubes.
+Your tea is ready!
+```
+*"Proper British tea—don’t forget the biscuits!"* 🍪
+
+---
+
+## **Final Thoughts on Procedures**
+
+Procedures are like that dependable friend who helps you move house—they’re there to do the job, but they don’t expect anything in return. Use them to simplify your code, make it reusable, and keep things neat and tidy.
+
+*"And remember: life’s too short to write the same code twice. Use procedures!"* 🎉

@@ -1,0 +1,138 @@
+# Input Statements
+
+Imagine you're creating a program that asks a user for their favourite superhero. Now, that's where `INPUT` comes in! Here’s how we handle input in Python, starting with different types.
+
+---
+
+### **Handling `INPUT` for Different Data Types**
+
+#### **INTEGER Input**
+In pseudo-code:
+```plaintext
+DECLARE Age : INTEGER
+OUTPUT "Enter your age:"
+INPUT Age
+```
+
+Translated to Python:
+```python
+Age = int(input("Enter your age: "))  # Converts input to an integer
+```
+
+Example:
+```python
+print("Enter your age:")
+Age = int(input())  # User enters 25
+print("You are", Age, "years old!")
+```
+
+Result on screen:
+```
+Enter your age:
+25
+You are 25 years old!
+```
+
+---
+
+#### **REAL Input**
+In pseudo-code:
+```plaintext
+DECLARE Price : REAL
+OUTPUT "Enter the price of your favourite snack:"
+INPUT Price
+```
+
+Translated to Python:
+```python
+Price = float(input("Enter the price of your favourite snack: "))  # Converts input to a float
+```
+
+Example:
+```python
+Price = float(input("Enter the price of your favourite snack: "))
+print("Your snack costs £", Price)
+```
+
+---
+
+#### **STRING Input**
+In pseudo-code:
+```plaintext
+DECLARE Name : STRING
+OUTPUT "What's your name?"
+INPUT Name
+```
+
+Translated to Python:
+```python
+Name = input("What's your name? ")  # String input is the default
+```
+
+Example:
+```python
+Name = input("What's your name? ")
+print("Hello,", Name, "! Nice to meet you!")
+```
+
+---
+
+### **Array Inputs**
+
+#### **1D Arrays**
+Let’s ask a user for a list of their favourite colours:
+```plaintext
+DECLARE Colours : ARRAY[1:5] OF STRING
+OUTPUT "Enter your 5 favourite colours:"
+FOR Counter ← 1 TO 5
+    INPUT Colours[Counter]
+NEXT Counter
+```
+
+Translated to Python:
+```python
+Colours = []  # Initialising an empty list
+print("Enter your 5 favourite colours:")
+for Counter in range(5):
+    Colours.append(input(f"Colour {Counter + 1}: "))  # Append input to the list
+print("Your favourite colours are:", Colours)
+```
+
+---
+
+#### **2D Arrays**
+Imagine a class where students' grades are stored in a grid:
+```plaintext
+DECLARE Grades : ARRAY[1:2, 1:3] OF INTEGER
+OUTPUT "Enter grades for 2 students (3 subjects each):"
+FOR Row ← 1 TO 2
+    FOR Col ← 1 TO 3
+        INPUT Grades[Row, Col]
+    NEXT Col
+NEXT Row
+```
+
+Translated to Python:
+```python
+Grades = [[0] * 3 for _ in range(2)]  # Create a 2x3 grid of zeros
+print("Enter grades for 2 students (3 subjects each):")
+for Row in range(2):
+    for Col in range(3):
+        Grades[Row][Col] = int(input(f"Student {Row + 1}, Subject {Col + 1}: "))
+print("The grades are:", Grades)
+```
+
+Example output:
+```
+Enter grades for 2 students (3 subjects each):
+Student 1, Subject 1: 85
+Student 1, Subject 2: 90
+Student 1, Subject 3: 88
+Student 2, Subject 1: 92
+Student 2, Subject 2: 80
+Student 2, Subject 3: 85
+The grades are: [[85, 90, 88], [92, 80, 85]]
+```
+
+---
+

@@ -1,0 +1,206 @@
+# Library Routines 🎩* 
+
+Welcome to the world of **library routines**! These are like secret agents in your code—quick, efficient, and always ready to do the heavy lifting. From finding remainders to generating random numbers, these routines save the day when the going gets tough. Let’s explore their magical powers and how they translate from pseudo-code to Python. And yes, there might be some cheeky humour ahead. 😉  
+
+---
+
+## **MOD (Remainder of Division)**  
+
+Think of `MOD` as the nosy neighbour—it peeks into your numbers and tells you what’s left over after division.  
+
+**Pseudo-Code Example:**  
+```plaintext  
+Value1 ← MOD(10, 3) // Remainder of 10 ÷ 3  
+Value2 ← 10 MOD 4 // Remainder of 10 ÷ 4  
+```  
+
+**Python Translation:**  
+```python  
+Value1 = 10 % 3  # Remainder of 10 ÷ 3  
+Value2 = 10 % 4  # Remainder of 10 ÷ 4  
+```  
+
+**Output:**  
+```plaintext  
+Value1 = 1  
+Value2 = 2  
+```  
+
+:::tip Did you know?  
+The `MOD` operator is perfect for detecting even and odd numbers. If `x % 2 == 0`, congratulations—it’s even! Otherwise, it’s a quirky oddball.  
+:::  
+
+**Fun Example:**  
+**Scenario:** You’re dividing pizza slices among your friends, but there’s always that one leftover slice.  
+
+```plaintext  
+Slices ← 7  
+Friends ← 3  
+Leftover ← Slices MOD Friends  
+OUTPUT "Leftover slice count: ", Leftover  
+```  
+
+**Python:**  
+```python  
+Slices = 7  
+Friends = 3  
+Leftover = Slices % Friends  
+print("Leftover slice count:", Leftover)  
+```  
+
+**Output:**  
+```plaintext  
+Leftover slice count: 1  
+```  
+*"Who gets the last slice? The one with the best puppy eyes!"* 🐶🍕
+
+---
+
+## **DIV (Quotient of Division)**  
+
+`DIV` is the no-nonsense accountant—it gives you the whole number part of division, ignoring the messy decimals.  
+
+**Pseudo-Code Example:**  
+```plaintext  
+Value1 ← DIV(10, 3) // Quotient of 10 ÷ 3  
+Value2 ← 15 DIV 4 // Quotient of 15 ÷ 4  
+```  
+
+**Python Translation:**  
+```python  
+Value1 = 10 // 3  # Quotient of 10 ÷ 3  
+Value2 = 15 // 4  # Quotient of 15 ÷ 4  
+```  
+
+**Output:**  
+```plaintext  
+Value1 = 3  
+Value2 = 3  
+```  
+
+:::danger Watch Out!  
+`DIV` doesn’t care about the remainder. If you’re expecting decimals, you might feel shortchanged! Use `/` for proper division.  
+:::  
+
+**Fun Example:**  
+**Scenario:** You’re splitting chocolates among friends but being strict about fairness.  
+
+```plaintext  
+Chocolates ← 10  
+Friends ← 3  
+EachFriend ← Chocolates DIV Friends  
+OUTPUT "Each friend gets: ", EachFriend  
+```  
+
+**Python:**  
+```python  
+Chocolates = 10  
+Friends = 3  
+EachFriend = Chocolates // Friends  
+print("Each friend gets:", EachFriend)  
+```  
+
+**Output:**  
+```plaintext  
+Each friend gets: 3  
+```  
+*"The leftover chocolates? That’s a bribe for the one counting."* 🍫😏  
+
+---
+
+## **ROUND (Rounding to Decimal Places)**  
+
+`ROUND` is the perfectionist—it smooths out those pesky decimals to the desired number of places.  
+
+**Pseudo-Code Example:**  
+```plaintext  
+Value1 ← ROUND(6.97354, 2) // Round to 2 decimal places  
+Value2 ← ROUND(3.14159, 3) // Round to 3 decimal places  
+```  
+
+**Python Translation:**  
+```python  
+Value1 = round(6.97354, 2)  # Round to 2 decimal places  
+Value2 = round(3.14159, 3)  # Round to 3 decimal places  
+```  
+
+**Output:**  
+```plaintext  
+Value1 = 6.97  
+Value2 = 3.142  
+```  
+
+:::tip Did you know?  
+`ROUND` can be used to control the precision of calculations, especially when you’re dealing with scary big numbers—like calculating how many fries you’ve eaten this year. 🍟  
+:::  
+
+**Fun Example:**  
+**Scenario:** Calculating your average quiz score but keeping it neat.  
+
+```plaintext  
+TotalScore ← 86.374  
+Tests ← 3  
+Average ← ROUND(TotalScore DIV Tests, 2)  
+OUTPUT "Your average score is: ", Average  
+```  
+
+**Python:**  
+```python  
+TotalScore = 86.374  
+Tests = 3  
+Average = round(TotalScore / Tests, 2)  
+print("Your average score is:", Average)  
+```  
+
+**Output:**  
+```plaintext  
+Your average score is: 28.79  
+```  
+*"And no, you can’t round your score to an A+!"* 📝😂  
+
+---
+
+## **RANDOM (Random Number Generation)**  
+
+`RANDOM` is the mischievous one—it pulls a number out of thin air, keeping things exciting!  
+
+**Pseudo-Code Example:**  
+```plaintext  
+Value ← RANDOM() // Generate a random number between 0 and 1  
+```  
+
+**Python Translation:**  
+```python  
+import random  
+Value = random.random()  # Generate a random number between 0 and 1  
+```  
+
+**Output:**  
+```plaintext  
+Value = 0.47853  
+```  
+
+**Fun Example:**  
+**Scenario:** Rolling a dice to see who pays the pizza bill.  
+
+```plaintext  
+DiceRoll ← ROUND(RANDOM() * 6 + 1, 0)  
+OUTPUT "You rolled: ", DiceRoll  
+```  
+
+**Python:**  
+```python  
+import random  
+DiceRoll = round(random.random() * 6 + 1, 0)  
+print("You rolled:", DiceRoll)  
+```  
+
+**Output:**  
+```plaintext  
+You rolled: 4  
+```  
+*"Whoever rolls the lowest pays—no cheating!"* 🎲🍕  
+
+---
+
+Library routines are like your ultimate sidekicks. They make your code cleaner, your life easier, and sometimes, they even save you from embarrassing math mistakes. So, go ahead—use them wisely and with a touch of sass! ✨

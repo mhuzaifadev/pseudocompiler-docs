@@ -1,0 +1,8 @@
+{
+  "label": "Input and Output Handling",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Understand how to handle INPUT and OUTPUT statements in pseudo-code and their Python equivalents."
+  }
+}

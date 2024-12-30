@@ -1,0 +1,174 @@
+
+# Two-Dimensional Arrays 
+
+Two-dimensional arrays are like parking garages with multiple floors—rows and columns. Let’s dive into this multi-level structure.
+
+---
+
+## **Declaration and Initialization**
+
+### **Pseudo-Code:**
+```plaintext
+DECLARE Grid : ARRAY[1:3, 1:3] OF INTEGER
+Grid[1, 1] ← 1
+Grid[1, 2] ← 2
+Grid[1, 3] ← 3
+Grid[2, 1] ← 4
+Grid[2, 2] ← 5
+Grid[2, 3] ← 6
+Grid[3, 1] ← 7
+Grid[3, 2] ← 8
+Grid[3, 3] ← 9
+```
+
+### **Python:**
+```python
+Grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+```
+
+---
+
+## **Accessing Elements**
+
+### **Pseudo-Code:**
+```plaintext
+OUTPUT Grid[2, 3]
+```
+
+### **Python:**
+```python
+print(Grid[1][2])  # 0-based indexing
+```
+
+**Output:**
+```
+6
+```
+*"That’s the spot on the second floor, third column—right near the vending machine."* 🥤
+
+---
+
+## **Nested Loops for Traversal**
+
+### **Pseudo-Code:**
+```plaintext
+FOR Row ← 1 TO 3
+    FOR Col ← 1 TO 3
+        OUTPUT Grid[Row, Col]
+    NEXT Col
+NEXT Row
+```
+
+### **Python:**
+```python
+for Row in range(3):
+    for Col in range(3):
+        print(Grid[Row][Col])
+```
+
+**Output:**
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+*"Exploring every nook and cranny of the parking garage!"* 🏢🚗
+
+---
+
+## **Example: Multiplication Table 🧮**
+
+**Pseudo-Code:**
+```plaintext
+DECLARE Table : ARRAY[1:3, 1:3] OF INTEGER
+FOR Row ← 1 TO 3
+    FOR Col ← 1 TO 3
+        Table[Row, Col] ← Row * Col
+    NEXT Col
+NEXT Row
+
+FOR Row ← 1 TO 3
+    FOR Col ← 1 TO 3
+        OUTPUT Table[Row, Col]
+    NEXT Col
+NEXT Row
+```
+
+**Python:**
+```python
+Table = [[Row * Col for Col in range(1, 4)] for Row in range(1, 4)]
+
+for Row in Table:
+    for Col in Row:
+        print(Col, end=" ")
+    print()
+```
+
+**Output:**
+```
+1 2 3 
+2 4 6 
+3 6 9 
+```
+*"Math just got a whole lot easier—and cooler!"* 🕶️
+
+---
+
+## **Input/Output Handling for 2D Arrays**
+
+**Pseudo-Code:**
+```plaintext
+DECLARE Matrix : ARRAY[1:2, 1:2] OF INTEGER
+INPUT Matrix[1, 1]
+INPUT Matrix[1, 2]
+INPUT Matrix[2, 1]
+INPUT Matrix[2, 2]
+
+OUTPUT "Matrix values:"
+FOR Row ← 1 TO 2
+    FOR Col ← 1 TO 2
+        OUTPUT Matrix[Row, Col]
+    NEXT Col
+NEXT Row
+```
+
+**Python:**
+```python
+Matrix = [[int(input(f"Enter value for Matrix[{Row+1}][{Col+1}]: ")) for Col in range(2)] for Row in range(2)]
+
+print("Matrix values:")
+for Row in Matrix:
+    for Col in Row:
+        print(Col, end=" ")
+    print()
+```
+
+**Example Input:**
+```
+Enter value for Matrix[1][1]: 10
+Enter value for Matrix[1][2]: 20
+Enter value for Matrix[2][1]: 30
+Enter value for Matrix[2][2]: 40
+```
+
+**Output:**
+```
+Matrix values:
+10 20 
+30 40
+```
+*"Building a matrix like a pro—Professor X would be proud!"* 📚
+
+---
+
+Arrays are an incredibly versatile tool in programming. Whether it’s a simple row of numbers or a complex grid, they keep your data structured and accessible. Happy coding! 🎉
