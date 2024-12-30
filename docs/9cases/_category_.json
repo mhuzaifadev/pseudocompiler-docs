@@ -1,8 +1,8 @@
 {
-  "label": "Library Routines",
+  "label": "Case Conditions ",
   "position": 10,
   "link": {
     "type": "generated-index",
-    "description": "Explore pseudo-code library routines like MOD, DIV, ROUND, and RANDOM and their Python equivalents."
+    "description": "In programming, the **CASE OF** structure simplifies these choices. Instead of writing a long chain of `IF-THEN` statements, you just list all the possibilities. Let’s see how it works in pseudo-code, how it translates to Python, and—of course—sprinkle in some spicy examples!"
   }
 }
